@@ -1,0 +1,43 @@
+.output-value {
+  height: 35px;
+  width: 90%;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px white;
+  font-weight: bold;
+  font-size: 12px;
+  border-bottom: 2px solid rgb(151, 80, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 360px) {
+  .output-value {
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .output-value {
+    width: 75%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .output-value {
+    height: 60px;
+    width: 170px;
+    font-size: 22px;
+    border-bottom: 3px solid rgb(151, 80, 54);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .output-value {
+    width: 230px;
+    font-size: 28px;
+  }
+}

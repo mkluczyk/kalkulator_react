@@ -1,0 +1,41 @@
+.btn-count {
+  height: 35px;
+  width: 90%;
+  box-sizing: border-box;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid rgb(151, 80, 54);
+  background-color: white;
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 360px) {
+  .btn-count {
+    height: 45px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .btn-count {
+    width: 75%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn-count {
+    height: 60px;
+    width: 100px;
+    font-size: 20px;
+    border: 3px solid rgb(151, 80, 54);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .btn-count {
+    width: 140px;
+    font-size: 26px;
+  }
+}

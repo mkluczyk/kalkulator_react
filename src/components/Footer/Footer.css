@@ -1,0 +1,25 @@
+.ftr {
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px rgb(255, 255, 255);
+  font-style: italic;
+  text-align: center;
+}
+
+@media screen and (min-width: 360px) {
+  .ftr {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ftr {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ftr {
+    font-size: 18px;
+  }
+}
