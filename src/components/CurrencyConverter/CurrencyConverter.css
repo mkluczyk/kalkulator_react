@@ -20,7 +20,12 @@
 .container:nth-of-type(2) {
   flex-direction: column;
   gap: 10px;
-  margin: 0 5px 70px;
+}
+
+.loader-break {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 360px) {
@@ -31,10 +36,6 @@
   .container:nth-of-type(1) {
     margin: 70px 20px 30px;
   }
-
-  .container:nth-of-type(2) {
-    margin: 0 10px 90px;
-  }
 }
 
 @media screen and (min-width: 540px) {
@@ -44,11 +45,8 @@
   .container:nth-of-type(1) {
     margin: 80px 20px 30px;
   }
-
-  .container:nth-of-type(2) {
-    margin: 0 5px 70px;
-  }
 }
+
 @media screen and (min-width: 768px) {
   .box {
     min-width: 650px;
@@ -60,7 +58,6 @@
 
   .container:nth-of-type(2) {
     flex-direction: row;
-    margin: 0 5px 175px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -70,9 +67,5 @@
 
   .container:nth-of-type(1) {
     margin: 60px 20px;
-  }
-
-  .container:nth-of-type(2) {
-    margin: 0 5px 145px;
   }
 }

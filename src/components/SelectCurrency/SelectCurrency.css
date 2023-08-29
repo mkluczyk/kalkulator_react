@@ -9,9 +9,18 @@
   margin-right: 5px;
 }
 
+.option {
+  font-size: 11px;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 360px) {
   .select-currency {
     height: 45px;
+    font-size: 13px;
+  }
+
+  .option {
     font-size: 13px;
   }
 }
@@ -19,6 +28,10 @@
 @media screen and (min-width: 540px) {
   .select-currency {
     width: 75%;
+    font-size: 15px;
+  }
+
+  .option {
     font-size: 15px;
   }
 }
@@ -30,11 +43,19 @@
     font-size: 20px;
     border: 3px solid rgb(151, 80, 54);
   }
+
+  .option {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .select-currency {
     width: 120px;
+    font-size: 26px;
+  }
+
+  .option {
     font-size: 26px;
   }
 }

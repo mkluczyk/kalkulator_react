@@ -1,7 +1,7 @@
 import React from "react";
-import "./Button.css";
+import "./CalculateButton.css";
 
-const Button = (onClick) => {
+const CalculateButton = ({ onClick }) => {
   return (
     <button className="btn-count" onClick={onClick}>
       Przelicz
@@ -9,4 +9,4 @@ const Button = (onClick) => {
   );
 };
 
-export default Button;
+export default CalculateButton;

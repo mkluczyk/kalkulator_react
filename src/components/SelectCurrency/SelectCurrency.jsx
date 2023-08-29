@@ -1,12 +1,12 @@
 import React from "react";
-import "./Select.css";
+import "./SelectCurrency.css";
 import currencies from "../../data/currencies";
 
-const Select = ({ value, onChange }) => {
+const SelectCurrency = ({ value, onChange }) => {
   return (
     <select className="select-currency" value={value} onChange={onChange}>
       {currencies.map((currency) => (
-        <option key={currency.code} value={currency.code}>
+        <option className="option" key={currency.code} value={currency.code}>
           {currency.name}
         </option>
       ))}
@@ -14,4 +14,4 @@ const Select = ({ value, onChange }) => {
   );
 };
 
-export default Select;
+export default SelectCurrency;

@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import "./CurrencyConverter.css";
 import Header from "../Header/Header";
-import Input from "../Input/Input";
-import Select from "../Select/Select";
-import Button from "../Button/Button";
+import InputValue from "../InputValue/InputValue";
+import SelectCurrency from "../SelectCurrency/SelectCurrency";
+import CalculateButton from "../CalculateButton/CalculateButton";
 import Footer from "../Footer/Footer";
 import Loader from "../Loader/Loader";
-import Output from "../Output/Output";
+import OutputValue from "../OutputValue/OutputValue";
 import { calculatedValue } from "../../utils/calculatedValue";
 import fetchCurrencyData from "../../services/apiCurrencies";
 
 const CurrencyConverter = () => {
   const [inputValue, setInputValue] = useState("");
   const [selectedCurrency, setSelectedCurrency] = useState("eur");
-  const [output, setOutput] = useState("");
+  const [outputValue, setOutputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const handleInputChange = (event) => {
@@ -25,7 +25,7 @@ const CurrencyConverter = () => {
   };
 
   const handleConversion = async () => {
-    setOutput("");
+    setOutputValue("");
 
     if (isNaN(inputValue) || inputValue <= 0) {
       window.alert("Wpisz poprawną wartość");
@@ -36,9 +36,9 @@ const CurrencyConverter = () => {
     try {
       const currencyData = await fetchCurrencyData(selectedCurrency);
       const calculatedResult = calculatedValue(currencyData, inputValue);
-      setOutput(`${calculatedResult.toFixed(2)} PLN`);
+      setOutputValue(calculatedResult);
     } catch (error) {
-      setOutput("Wystąpił błąd");
+      setOutputValue("Wystąpił błąd");
     }
     setIsLoading(false);
   };
@@ -49,12 +49,15 @@ const CurrencyConverter = () => {
         <Header />
       </div>
       <div className="container">
-        <Input value={inputValue} onChange={handleInputChange} />
-        <Select value={selectedCurrency} onChange={handleCurrencyChange} />
-        <Button onClick={handleConversion} />
-        <Output value={output} />
+        <InputValue value={inputValue} onChange={handleInputChange} />
+        <SelectCurrency
+          value={selectedCurrency}
+          onChange={handleCurrencyChange}
+        />
+        <CalculateButton onClick={handleConversion} />
+        <OutputValue value={outputValue} />
       </div>
-      {isLoading ? <Loader /> : null};
+      <div className="loader-break">{isLoading ? <Loader /> : null}</div>
       <Footer />
     </div>
   );

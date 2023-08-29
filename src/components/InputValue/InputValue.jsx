@@ -1,7 +1,7 @@
 import React from "react";
-import "./Input.css";
+import "./InputValue.css";
 
-const Input = ({ onChange }) => {
+const InputValue = ({ onChange }) => {
   return (
     <input
       className="input-amount"
@@ -13,4 +13,4 @@ const Input = ({ onChange }) => {
   );
 };
 
-export default Input;
+export default InputValue;
