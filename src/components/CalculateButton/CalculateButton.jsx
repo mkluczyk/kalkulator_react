@@ -1,9 +1,9 @@
 import React from "react";
 import "./CalculateButton.css";
 
-const CalculateButton = ({ onClick }) => {
+const CalculateButton = ({ onClick, isDisabled }) => {
   return (
-    <button className="btn-count" onClick={onClick}>
+    <button className="btn-count" onClick={onClick} disabled={isDisabled}>
       Przelicz
     </button>
   );

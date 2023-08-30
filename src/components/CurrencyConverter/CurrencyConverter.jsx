@@ -54,7 +54,7 @@ const CurrencyConverter = () => {
           value={selectedCurrency}
           onChange={handleCurrencyChange}
         />
-        <CalculateButton onClick={handleConversion} />
+        <CalculateButton onClick={handleConversion} isDisabled={isLoading} />
         <OutputValue value={outputValue} />
       </div>
       <div className="loader-break">{isLoading ? <Loader /> : null}</div>
