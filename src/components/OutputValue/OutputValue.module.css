@@ -1,11 +1,11 @@
-.output-value {
+.outputValue {
   height: 35px;
   width: 90%;
   box-sizing: border-box;
-  color: rgb(0, 0, 0);
-  text-shadow: 1px 1px white;
+  color: rgb(104, 2, 2);
+  text-shadow: 1px 1px rgb(218, 216, 216);
   font-weight: bold;
-  font-size: 12px;
+  font-size: 13px;
   border-bottom: 2px solid rgb(151, 80, 54);
   display: flex;
   justify-content: center;
@@ -13,21 +13,21 @@
 }
 
 @media screen and (min-width: 360px) {
-  .output-value {
+  .outputValue {
     height: 45px;
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
 @media screen and (min-width: 540px) {
-  .output-value {
+  .outputValue {
     width: 75%;
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .output-value {
+  .outputValue {
     height: 60px;
     width: 170px;
     font-size: 22px;
@@ -36,7 +36,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .output-value {
+  .outputValue {
     width: 230px;
     font-size: 28px;
   }

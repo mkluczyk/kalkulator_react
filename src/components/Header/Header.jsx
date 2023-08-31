@@ -1,15 +1,15 @@
 import React from "react";
-import "./Header.css";
+import styles from "./Header.module.css";
 
 const Header = () => {
   return (
     <>
       <img
-        className="img"
+        className={styles.img}
         src="exchange_506167.png"
         alt="Logo przelicznika walut"
       />
-      <h1 className="title">PRZELICZNIK WALUT</h1>
+      <h1 className={styles.title}>PRZELICZNIK WALUT</h1>
     </>
   );
 };

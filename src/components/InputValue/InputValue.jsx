@@ -1,10 +1,10 @@
 import React from "react";
-import "./InputValue.css";
+import styles from "./InputValue.module.css";
 
 const InputValue = ({ onChange }) => {
   return (
     <input
-      className="input-amount"
+      className={styles.inputAmount}
       placeholder="Kwota PLN"
       min="0"
       type="number"

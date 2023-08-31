@@ -1,8 +1,8 @@
 import React from "react";
-import "./OutputValue.css";
+import styles from "./OutputValue.module.css";
 
 const OutputValue = ({ value }) => {
-  return <span className="output-value">{value}</span>;
+  return <span className={styles.outputValue}>{value}</span>;
 };
 
 export default OutputValue;

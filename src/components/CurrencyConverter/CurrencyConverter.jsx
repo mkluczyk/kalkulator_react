@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./CurrencyConverter.css";
+import styles from "./CurrencyConverter.module.css";
 import Header from "../Header/Header";
 import InputValue from "../InputValue/InputValue";
 import SelectCurrency from "../SelectCurrency/SelectCurrency";
@@ -44,21 +44,23 @@ const CurrencyConverter = () => {
   };
 
   return (
-    <div className="box">
-      <div className="container">
-        <Header />
+    <div className={styles.bgImg}>
+      <div className={styles.box}>
+        <div className={styles.container}>
+          <Header />
+        </div>
+        <div className={styles.container}>
+          <InputValue value={inputValue} onChange={handleInputChange} />
+          <SelectCurrency
+            value={selectedCurrency}
+            onChange={handleCurrencyChange}
+          />
+          <CalculateButton onClick={handleConversion} isDisabled={isLoading} />
+          <OutputValue value={outputValue} />
+        </div>
+        <div className={styles.loaderDiv}>{isLoading ? <Loader /> : null}</div>
+        <Footer />
       </div>
-      <div className="container">
-        <InputValue value={inputValue} onChange={handleInputChange} />
-        <SelectCurrency
-          value={selectedCurrency}
-          onChange={handleCurrencyChange}
-        />
-        <CalculateButton onClick={handleConversion} isDisabled={isLoading} />
-        <OutputValue value={outputValue} />
-      </div>
-      <div className="loader-break">{isLoading ? <Loader /> : null}</div>
-      <Footer />
     </div>
   );
 };

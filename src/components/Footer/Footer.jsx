@@ -1,9 +1,9 @@
 import React from "react";
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className="ftr">
+    <footer className={styles.ftr}>
       <p>Obraz autorstwa Freepik</p>
       <p>Ikona autorstwa Freepik</p>
     </footer>

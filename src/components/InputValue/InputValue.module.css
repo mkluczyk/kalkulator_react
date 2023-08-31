@@ -1,4 +1,4 @@
-.btn-count {
+.inputAmount {
   height: 35px;
   width: 90%;
   box-sizing: border-box;
@@ -6,36 +6,35 @@
   font-weight: bold;
   text-align: center;
   border: 2px solid rgb(151, 80, 54);
-  background-color: white;
   margin-right: 5px;
 }
 
 @media screen and (min-width: 360px) {
-  .btn-count {
+  .inputAmount {
     height: 45px;
     font-size: 13px;
   }
 }
 
 @media screen and (min-width: 540px) {
-  .btn-count {
+  .inputAmount {
     width: 75%;
     font-size: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .btn-count {
+  .inputAmount {
     height: 60px;
-    width: 100px;
+    width: 170px;
     font-size: 20px;
     border: 3px solid rgb(151, 80, 54);
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .btn-count {
-    width: 140px;
+  .inputAmount {
+    width: 210px;
     font-size: 26px;
   }
 }

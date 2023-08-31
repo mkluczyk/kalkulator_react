@@ -1,12 +1,16 @@
 import React from "react";
-import "./SelectCurrency.css";
+import styles from "./SelectCurrency.module.css";
 import currencies from "../../data/currencies";
 
 const SelectCurrency = ({ value, onChange }) => {
   return (
-    <select className="select-currency" value={value} onChange={onChange}>
+    <select className={styles.selectCurrency} value={value} onChange={onChange}>
       {currencies.map((currency) => (
-        <option className="option" key={currency.code} value={currency.code}>
+        <option
+          className={styles.option}
+          key={currency.code}
+          value={currency.code}
+        >
           {currency.name}
         </option>
       ))}

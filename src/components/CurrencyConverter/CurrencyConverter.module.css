@@ -1,3 +1,17 @@
+.bgImg {
+  background-image: url(kolaz.jpg);
+  background-position-x: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .box {
   background-color: rgba(213, 190, 190, 0.764);
   height: 400px;
@@ -22,7 +36,7 @@
   gap: 10px;
 }
 
-.loader-break {
+.loaderDiv {
   height: 50px;
   width: 100%;
   margin-bottom: 25px;
