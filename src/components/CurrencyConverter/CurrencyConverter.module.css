@@ -36,7 +36,7 @@
   gap: 10px;
 }
 
-.loaderDiv {
+.loaderContainter {
   height: 50px;
   width: 100%;
   margin-bottom: 25px;
