@@ -33,6 +33,6 @@ The currency calculator application is designed to convert the amount indicated 
 **<a href="kalkulatorwalutowyreact.netlify.app">CLICK TO ENTER THE WEBSITE</a>**
 
 <p align="center">
-  <img height="400" src="/DesktopView.PNG" alt="DESKTOP VIEW">
-   <img height="400" src="/MobileView.PNG" alt="MOBILE VIEW">
+  <img height="400" src="/DesktopView.jpg" alt="DESKTOP VIEW">
+   <img height="400" src="/MobileView.jpg" alt="MOBILE VIEW">
 </p>
