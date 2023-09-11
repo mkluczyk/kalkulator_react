@@ -14,7 +14,7 @@ na 3 inne wybrane waluty (EUR, USD oraz CHF).
 5. Umiejętość pracy z kodem asynchronicznym.
 6. Stworzenie kodu z wykorzystaniem walidacji danych oraz wyłapywania możliwych błędów użytkownika.
 
-**<a href="kalkulatorwalutowyreact.netlify.app">KLIKNIJ, BY WYŚWIETLIĆ STRONĘ</a>**
+**<a href="https://kalkulatorwalutowyreact.netlify.app/">KLIKNIJ, BY WYŚWIETLIĆ STRONĘ</a>**
 
 # **ENG**
 
@@ -30,7 +30,7 @@ The currency calculator application is designed to convert the amount indicated 
 3. Using knowledge of HTML and CSS tags in the application (including Responsive Web Design techniques).
 4. Creating a code using data validation and catching possible user errors.
 
-**<a href="kalkulatorwalutowyreact.netlify.app">CLICK TO ENTER THE WEBSITE</a>**
+**<a href="https://kalkulatorwalutowyreact.netlify.app/">CLICK TO ENTER THE WEBSITE</a>**
 
 <p align="center">
   <img height="400" src="/DesktopView.PNG" alt="DESKTOP VIEW">
