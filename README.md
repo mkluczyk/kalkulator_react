@@ -27,12 +27,12 @@ The currency calculator application is designed to convert the amount indicated 
 1. Creating a well-functioning application with properly working functions.
 2. Presentation of knowledge on how to create the clear structure in a React App.
 3. Showing the ability to apply current, good practices when writing React code and ensuring its readability.
-3. Using knowledge of HTML and CSS tags in the application (including Responsive Web Design techniques).
-4. Creating a code using data validation and catching possible user errors.
+4. Using knowledge of HTML and CSS tags in the application (including Responsive Web Design techniques).
+5. Creating a code using data validation and catching possible user errors.
 
 **<a href="https://kalkulatorwalutowyreact.netlify.app/">CLICK TO ENTER THE WEBSITE</a>**
 
 <p align="center">
-  <img height="400" src="/DesktopView.PNG" alt="DESKTOP VIEW">
-   <img height="400" src="/MobileView.PNG" alt="MOBILE VIEW">
+  <img height="400" src="/DesktopView.jpg" alt="DESKTOP VIEW">
+   <img height="400" src="/MobileView.jpg" alt="MOBILE VIEW">
 </p>
